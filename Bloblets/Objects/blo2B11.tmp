@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpvm261sm4swa"]
+
+[ext_resource type="Script" path="res://BlobletBrain.gd" id="1_2t4yq"]
+
+[node name="BlobletBrain" type="Node"]
+script = ExtResource("1_2t4yq")

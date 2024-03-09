@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpvm261sm4swa"]
+
+[ext_resource type="Script" path="res://Scripts/BlobletBrain.gd" id="1_k4hwb"]
+[ext_resource type="AudioStream" uid="uid://cygrymyji0vd5" path="res://Scenes/happy-pop-3-185288.mp3" id="2_1bfug"]
+
+[node name="BlobletBrain" type="Node"]
+script = ExtResource("1_k4hwb")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+visible = false
+stream = ExtResource("2_1bfug")
+volume_db = -3.856
+pitch_scale = 0.75

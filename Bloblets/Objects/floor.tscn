@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://jpwhsl11xb7g"]
+
+[ext_resource type="Texture2D" uid="uid://djj0jjds1lat" path="res://Sprites/Floor.png" id="1_7l051"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axu68"]
+size = Vector2(16, 16)
+
+[node name="Floor" type="StaticBody2D" groups=["Jumpable"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["Jumpable"]]
+texture = ExtResource("1_7l051")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Jumpable"]]
+shape = SubResource("RectangleShape2D_axu68")

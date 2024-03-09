@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpm3f11oc0vo0"]
+
+[ext_resource type="Texture2D" uid="uid://cs3o10npd8cme" path="res://Sprites/Bloblet.png" id="1_lr0j8"]
+[ext_resource type="Script" path="res://Scripts/rigid_bloblet.gd" id="1_tcs5y"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mubiy"]
+friction = 0.05
+bounce = 0.1
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5wxhs"]
+radius = 5.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l53qw"]
+size = Vector2(8, 2)
+
+[node name="RigidBloblet" type="RigidBody2D" groups=["Jumpable"]]
+collision_layer = 3
+collision_mask = 3
+mass = 8.0
+physics_material_override = SubResource("PhysicsMaterial_mubiy")
+lock_rotation = true
+script = ExtResource("1_tcs5y")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["Jumpable"]]
+texture = ExtResource("1_lr0j8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Jumpable"]]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_5wxhs")
+
+[node name="Area2D" type="Area2D" parent="." groups=["Jumpable"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["Jumpable"]]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_l53qw")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

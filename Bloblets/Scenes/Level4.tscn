@@ -1,0 +1,718 @@
+[gd_scene load_steps=8 format=3 uid="uid://c5djpt42ro1lv"]
+
+[ext_resource type="Texture2D" uid="uid://dv7mhqpo1xmhy" path="res://Sprites/BG.png" id="1_s280m"]
+[ext_resource type="PackedScene" uid="uid://jpwhsl11xb7g" path="res://Objects/floor.tscn" id="2_461vb"]
+[ext_resource type="PackedScene" uid="uid://bpvm261sm4swa" path="res://Objects/bloblet_brain.tscn" id="3_jn7u0"]
+[ext_resource type="PackedScene" uid="uid://btdm34yx6a3ly" path="res://Objects/FinishLevel.tscn" id="4_ch1sc"]
+[ext_resource type="PackedScene" uid="uid://d0f8pai4b6kc0" path="res://Objects/collect_more.tscn" id="5_5djm6"]
+[ext_resource type="PackedScene" uid="uid://c41bnk6aoj051" path="res://Objects/DeathPit.tscn" id="6_fqi34"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0wr8e"]
+friction = 0.0
+bounce = 0.82
+
+[node name="Level4" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(240, 135)
+texture = ExtResource("1_s280m")
+
+[node name="Floor" type="Node" parent="."]
+
+[node name="Floor" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 248)
+physics_material_override = SubResource("PhysicsMaterial_0wr8e")
+
+[node name="Floor80" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 232)
+
+[node name="Floor81" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 216)
+
+[node name="Floor82" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 200)
+
+[node name="Floor83" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 184)
+
+[node name="Floor84" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 168)
+
+[node name="Floor85" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 152)
+
+[node name="Floor133" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 200)
+
+[node name="Floor134" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 184)
+
+[node name="Floor135" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 232)
+
+[node name="Floor136" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 216)
+
+[node name="Floor137" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 136)
+
+[node name="Floor138" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 120)
+
+[node name="Floor139" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 168)
+
+[node name="Floor140" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 152)
+
+[node name="Floor141" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 72)
+
+[node name="Floor142" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 56)
+
+[node name="Floor143" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 104)
+
+[node name="Floor144" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 88)
+
+[node name="Floor145" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 40)
+
+[node name="Floor146" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 24)
+
+[node name="Floor181" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 200)
+
+[node name="Floor182" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 184)
+
+[node name="Floor183" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 232)
+
+[node name="Floor184" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 216)
+
+[node name="Floor185" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 136)
+
+[node name="Floor186" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 120)
+
+[node name="Floor187" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 168)
+
+[node name="Floor188" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 152)
+
+[node name="Floor189" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 72)
+
+[node name="Floor190" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 56)
+
+[node name="Floor191" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 104)
+
+[node name="Floor192" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 88)
+
+[node name="Floor193" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 40)
+
+[node name="Floor194" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 24)
+
+[node name="Floor86" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 136)
+
+[node name="Floor87" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 120)
+
+[node name="Floor88" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 104)
+
+[node name="Floor89" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 88)
+
+[node name="Floor90" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 72)
+
+[node name="Floor91" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 56)
+
+[node name="Floor92" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 40)
+
+[node name="Floor93" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 24)
+
+[node name="Floor95" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(24, 8)
+
+[node name="Floor96" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(40, 8)
+
+[node name="Floor97" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 8)
+
+[node name="Floor98" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 8)
+
+[node name="Floor99" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(88, 8)
+
+[node name="Floor100" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(104, 8)
+
+[node name="Floor101" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(120, 8)
+
+[node name="Floor102" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(136, 8)
+
+[node name="Floor103" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(152, 8)
+
+[node name="Floor104" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(168, 8)
+
+[node name="Floor105" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 8)
+
+[node name="Floor106" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 8)
+
+[node name="Floor107" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(216, 8)
+
+[node name="Floor108" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 8)
+
+[node name="Floor109" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 8)
+
+[node name="Floor110" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(264, 8)
+
+[node name="Floor111" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(280, 8)
+
+[node name="Floor112" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 8)
+
+[node name="Floor113" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(312, 8)
+
+[node name="Floor114" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(328, 8)
+
+[node name="Floor115" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(344, 8)
+
+[node name="Floor116" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(360, 8)
+
+[node name="Floor117" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(376, 8)
+
+[node name="Floor118" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(392, 8)
+
+[node name="Floor119" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(408, 8)
+
+[node name="Floor120" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(424, 8)
+
+[node name="Floor121" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(440, 8)
+
+[node name="Floor122" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(456, 8)
+
+[node name="Floor123" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 8)
+
+[node name="Floor124" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 8)
+
+[node name="Floor94" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 8)
+
+[node name="Floor2" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(8, 264)
+
+[node name="Floor3" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(24, 248)
+
+[node name="Floor4" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(24, 264)
+
+[node name="Floor5" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(40, 248)
+
+[node name="Floor6" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(40, 264)
+
+[node name="Floor7" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 248)
+
+[node name="Floor8" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 264)
+
+[node name="Floor9" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 248)
+
+[node name="Floor10" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 264)
+
+[node name="Floor12" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(88, 264)
+
+[node name="Floor14" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(104, 264)
+
+[node name="Floor131" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(136, 104)
+
+[node name="Floor130" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(120, 104)
+
+[node name="Floor163" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(136, 88)
+
+[node name="Floor169" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(152, 104)
+
+[node name="Floor171" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(168, 104)
+
+[node name="Floor164" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(120, 88)
+
+[node name="Floor173" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(88, 88)
+
+[node name="Floor174" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(104, 88)
+
+[node name="Floor175" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(104, 88)
+
+[node name="Floor176" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(104, 104)
+
+[node name="Floor177" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(88, 104)
+
+[node name="Floor165" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 88)
+
+[node name="Floor166" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 88)
+
+[node name="Floor153" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 72)
+
+[node name="Floor154" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 56)
+
+[node name="Floor155" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 40)
+
+[node name="Floor156" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 72)
+
+[node name="Floor157" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 56)
+
+[node name="Floor158" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 40)
+
+[node name="Floor167" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 24)
+
+[node name="Floor168" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 24)
+
+[node name="Floor25" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 232)
+
+[node name="Floor27" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 232)
+
+[node name="Floor67" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(40, 232)
+
+[node name="Floor68" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(56, 216)
+
+[node name="Floor29" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 216)
+
+[node name="Floor35" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(72, 200)
+
+[node name="Floor16" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(120, 264)
+
+[node name="Floor18" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(136, 264)
+
+[node name="Floor20" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(152, 264)
+
+[node name="Floor22" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(168, 264)
+
+[node name="Floor24" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 264)
+
+[node name="Floor26" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 264)
+
+[node name="Floor28" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(216, 264)
+
+[node name="Floor30" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 264)
+
+[node name="Floor31" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 248)
+
+[node name="Floor37" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 248)
+
+[node name="Floor39" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 232)
+
+[node name="Floor41" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 232)
+
+[node name="Floor43" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 232)
+
+[node name="Floor45" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(360, 232)
+
+[node name="Floor47" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(408, 232)
+
+[node name="Floor49" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(376, 168)
+
+[node name="Floor51" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(360, 168)
+
+[node name="Floor53" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(344, 168)
+
+[node name="Floor148" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(424, 168)
+
+[node name="Floor151" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(424, 184)
+
+[node name="Floor149" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(408, 168)
+
+[node name="Floor150" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(392, 168)
+
+[node name="Floor55" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(328, 168)
+
+[node name="Floor63" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(312, 168)
+
+[node name="Floor65" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 168)
+
+[node name="Floor152" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 152)
+
+[node name="Floor159" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 136)
+
+[node name="Floor160" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 120)
+
+[node name="Floor161" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 104)
+
+[node name="Floor162" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(336, 152)
+
+[node name="Floor178" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(336, 136)
+
+[node name="Floor179" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(336, 120)
+
+[node name="Floor180" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(376, 152)
+
+[node name="Floor195" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(376, 136)
+
+[node name="Floor196" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 152)
+
+[node name="Floor197" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 136)
+
+[node name="Floor203" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 152)
+
+[node name="Floor204" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 136)
+
+[node name="Floor198" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 120)
+
+[node name="Floor199" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 104)
+
+[node name="Floor200" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 104)
+
+[node name="Floor201" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 104)
+
+[node name="Floor202" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 120)
+
+[node name="Floor70" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(280, 168)
+
+[node name="Floor71" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(264, 168)
+
+[node name="Floor72" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 168)
+
+[node name="Floor73" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(232, 168)
+
+[node name="Floor74" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(216, 168)
+
+[node name="Floor75" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 168)
+
+[node name="Floor76" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 152)
+
+[node name="Floor77" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 152)
+
+[node name="Floor78" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 136)
+
+[node name="Floor79" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 120)
+
+[node name="Floor125" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 120)
+
+[node name="Floor126" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 104)
+
+[node name="Floor127" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 88)
+
+[node name="Floor128" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(200, 88)
+
+[node name="Floor129" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 104)
+
+[node name="Floor132" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 88)
+
+[node name="Floor147" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(184, 88)
+
+[node name="Floor32" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(248, 264)
+
+[node name="Floor34" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(264, 264)
+
+[node name="Floor36" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(280, 264)
+
+[node name="Floor38" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 264)
+
+[node name="Floor40" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(312, 264)
+
+[node name="Floor42" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(328, 264)
+
+[node name="Floor44" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(344, 264)
+
+[node name="Floor46" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(360, 264)
+
+[node name="Floor64" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(296, 248)
+
+[node name="Floor66" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(360, 248)
+
+[node name="Floor69" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(408, 248)
+
+[node name="Floor48" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(376, 264)
+
+[node name="Floor50" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(392, 264)
+
+[node name="Floor52" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(408, 264)
+
+[node name="Floor54" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(424, 264)
+
+[node name="Floor56" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(440, 264)
+
+[node name="Floor57" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(456, 248)
+
+[node name="Floor58" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(456, 264)
+
+[node name="Floor59" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 248)
+
+[node name="Floor60" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(472, 264)
+
+[node name="Floor61" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 248)
+
+[node name="Floor62" parent="Floor" instance=ExtResource("2_461vb")]
+position = Vector2(488, 264)
+
+[node name="BlobletBrain" parent="." instance=ExtResource("3_jn7u0")]
+unique_name_in_owner = true
+scene = "Level1"
+
+[node name="Finish" parent="." instance=ExtResource("4_ch1sc")]
+position = Vector2(120, 72)
+
+[node name="CollectMore" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(88, 232)
+
+[node name="CollectMore8" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(88, 248)
+
+[node name="CollectMore2" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(88, 216)
+
+[node name="CollectMore6" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(96, 200)
+
+[node name="CollectMore3" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(104, 232)
+
+[node name="CollectMore9" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(104, 248)
+
+[node name="CollectMore4" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(104, 216)
+
+[node name="CollectMore7" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(112, 200)
+
+[node name="CollectMore5" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(120, 232)
+
+[node name="CollectMore10" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(120, 248)
+
+[node name="CollectMore11" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(120, 216)
+
+[node name="CollectMore12" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(128, 200)
+
+[node name="CollectMore13" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(136, 232)
+
+[node name="CollectMore14" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(136, 248)
+
+[node name="CollectMore17" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(152, 232)
+
+[node name="CollectMore18" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(152, 248)
+
+[node name="CollectMore15" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(136, 216)
+
+[node name="CollectMore16" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(144, 200)
+
+[node name="CollectMore19" parent="." instance=ExtResource("5_5djm6")]
+position = Vector2(456, 232)
+
+[node name="DeathPit9" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(264, 248)
+
+[node name="DeathPit11" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(264, 152)
+
+[node name="DeathPit20" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(216, 152)
+
+[node name="DeathPit24" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(168, 88)
+
+[node name="DeathPit25" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(152, 88)
+
+[node name="DeathPit19" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(280, 152)
+
+[node name="DeathPit16" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(216, 248)
+
+[node name="DeathPit18" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(232, 248)
+
+[node name="DeathPit17" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(200, 248)
+
+[node name="DeathPit10" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(280, 248)
+
+[node name="DeathPit12" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(328, 248)
+
+[node name="DeathPit13" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(312, 248)
+
+[node name="DeathPit15" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(344, 248)
+
+[node name="DeathPit14" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(376, 248)
+
+[node name="DeathPit21" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(424, 248)
+
+[node name="DeathPit22" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(392, 248)
+
+[node name="DeathPit23" parent="." instance=ExtResource("6_fqi34")]
+position = Vector2(440, 248)

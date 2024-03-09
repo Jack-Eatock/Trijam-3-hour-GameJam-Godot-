@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0f8pai4b6kc0"]
+
+[ext_resource type="Texture2D" uid="uid://qkmic68bjoy3" path="res://Sprites/PickupMore.png" id="1_istv2"]
+[ext_resource type="Script" path="res://Scripts/collect_more.gd" id="1_svs2o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umyat"]
+size = Vector2(14, 14)
+
+[node name="CollectMore" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_svs2o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_umyat")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_istv2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
